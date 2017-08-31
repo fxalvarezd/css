@@ -6,9 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <style>
-    /*
-     * Variables
-     */
     :root {
       --card-padding: 24px;
       --card-height: 340px;
@@ -34,13 +31,11 @@
       --blur-size: var(--blur-width) calc(var(--card-height) - var(--footer-height));
     }
 
-    /*
-     * Card Skeleton for Loading
-     */
     .card {
       width: 480px;
       height: var(--card-height);
     }
+
     .card:empty::after {
       content: "";
       display: block;
@@ -87,9 +82,7 @@
           0 0;
       }
     }
-    /*
-     * Demo Stuff
-     */
+
     body {
       min-height: 100vh;
       background-color: #fff;
